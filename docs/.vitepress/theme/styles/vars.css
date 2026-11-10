@@ -1,0 +1,62 @@
+/**
+ * TAG 博客 (tagblog.world)
+ * 视觉系统：京都青春物语风 🍃 + Dark NOC 实验室
+ */
+
+:root {
+  /* 京都青春物语主色调 */
+  --vp-c-bg: #FFFDF8;
+  --vp-c-bg-alt: #F7F4EB;
+  --vp-c-bg-soft: #F2EFE6;
+  --vp-c-bg-mute: #EAE6DB;
+
+  /* 主色：京都鸭川青碧 */
+  --vp-c-brand-1: #4DB6AC;
+  --vp-c-brand-2: #26A69A;
+  --vp-c-brand-3: #00897B;
+  --vp-c-brand-soft: rgba(77, 182, 172, 0.14);
+
+  /* 辅色：清爽薄荷青 */
+  --tag-secondary: #B2DFDB;
+  --tag-accent-warm: #FF8A65;
+
+  /* 文字：杉木黑褐，温润耐看 */
+  --vp-c-text-1: #3E2723;
+  --vp-c-text-2: #5D4037;
+  --vp-c-text-3: #8D6E63;
+
+  /* 边框与阴影 */
+  --vp-c-border: #E8E3D7;
+  --vp-c-divider: #EDE8DC;
+  --vp-shadow-1: 0 1px 3px rgba(62, 39, 35, 0.05);
+  --vp-shadow-2: 0 4px 12px rgba(62, 39, 35, 0.08);
+  --vp-shadow-3: 0 8px 24px rgba(62, 39, 35, 0.12);
+
+  /* 日记本布局圆角 */
+  --vp-card-radius: 12px;
+
+  /* Dark NOC 实验室专属设计令牌 */
+  --noc-bg-base: #0B1120;
+  --noc-bg-surface: #151F32;
+  --noc-bg-card: #1E293B;
+  --noc-border: #334155;
+  --noc-text-bright: #F8FAFC;
+  --noc-text-dim: #94A3B8;
+  --noc-status-green: #10B981;
+  --noc-status-amber: #F59E0B;
+  --noc-status-red: #EF4444;
+  --noc-accent-cyan: #06B6D4;
+  --noc-mono-font: 'JetBrains Mono', SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* 深色模式适配微调 */
+.dark {
+  --vp-c-bg: #1A1F26;
+  --vp-c-bg-alt: #14181E;
+  --vp-c-bg-soft: #222933;
+  --vp-c-text-1: #EDEAE5;
+  --vp-c-text-2: #C4BFB6;
+  --vp-c-text-3: #969188;
+  --vp-c-border: #2E3846;
+  --vp-c-divider: #262F3C;
+}

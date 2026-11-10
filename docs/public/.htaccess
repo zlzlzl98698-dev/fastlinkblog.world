@@ -1,0 +1,92 @@
+# ========================================================
+# 飞鸟博客 (fastlinkblog.world) Apache 生产环境基础架构配置
+# 涵盖：HTTPS 301、WWW 301、Clean URLs、42 家商业跳转与安全头部
+# ========================================================
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # 1. 强制 HTTPS 301 重定向 (统一主域安全协议)
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://fastlinkblog.world/$1 [R=301,L]
+
+  # 2. 强制非 WWW (裸域名) 301 重定向 (防止权重分散)
+  RewriteCond %{HTTP_HOST} ^www\.fastlinkblog\.world$ [NC]
+  RewriteRule ^(.*)$ https://fastlinkblog.world/$1 [R=301,L]
+
+  # 3. 商业推广外链 302 优雅跳转 (/go/:slug)
+  RewriteRule ^go/guangsu/?$ https://sahude.gsyvipaff.com/#/?code=keqgvT5Y [R=302,L]
+  RewriteRule ^go/muguang/?$ https://varnexa.twilightaff.com/#/?code=D1LHglg3 [R=302,L]
+  RewriteRule ^go/feimao/?$ https://guangs.flycataff.com/#/?code=6uq0Xe9y [R=302,L]
+  RewriteRule ^go/weifeng/?$ https://edp01.breezenetaff.com/#/?code=t3huofyI [R=302,L]
+  RewriteRule ^go/dalaoyun/?$ https://qwerty.dalaoyunaff.com/#/?code=jCPLmoWN [R=302,L]
+  RewriteRule ^go/xingdaomeng/?$ https://guangs.xingdaomeng.com/#/?code=1TynBYnR [R=302,L]
+  RewriteRule ^go/ermao/?$ https://guangs.2maoyunaff.cc/#/?code=7mjvgGbW [R=302,L]
+  RewriteRule ^go/wuyou/?$ https://wep01.worryfreeaff.com/#/?code=4ZoSbLdL [R=302,L]
+  RewriteRule ^go/weitu/?$ https://guangs.v2yunvipaff.com/#/?code=xIutqOBA [R=302,L]
+  RewriteRule ^go/firefly/?$ https://vip02.fireflyaff.com/#/?code=2n7VURre [R=302,L]
+  RewriteRule ^go/yuzhou/?$ https://wzjc.yuzoucloud.cc/#/?code=yrThwMP1 [R=302,L]
+  RewriteRule ^go/u1s1/?$ https://guangs.vipaff.cc/#/?code=xhX5X22f [R=302,L]
+  RewriteRule ^go/lingmao/?$ https://vip01.civetnet.com/#/?code=8MIAyxak [R=302,L]
+  RewriteRule ^go/jilian/?$ https://guangs.jlyvipaff.com/#/?code=VM1rKGUu [R=302,L]
+  RewriteRule ^go/guangnian/?$ https://guangs.gntaff.com/#/?code=X1FoxjGE [R=302,L]
+  RewriteRule ^go/yifan/?$ https://guangs.1flyunaff.cc/#/register?code=Yr7FhB7r [R=302,L]
+  RewriteRule ^go/sogo/?$ https://guangs.sogoyunaff.cc/#/?code=327Vs0w7 [R=302,L]
+  RewriteRule ^go/kexin/?$ https://guangs.kosingaff.com/#/register?code=UYDtNlCY [R=302,L]
+  RewriteRule ^go/sujie/?$ https://guangs.speedworldaff.cc/#/register?code=xgXzEfZB [R=302,L]
+  RewriteRule ^go/kaili/?$ https://guangs.kailiaff.com/#/?code=kaili [R=302,L]
+  RewriteRule ^go/shanyue/?$ https://vip02.flashleapaff.com/#/?code=3lgzm9mm [R=302,L]
+  RewriteRule ^go/quanqiu/?$ https://guangs.gcvipaff.com/#/?code=Ov2nvU9C [R=302,L]
+  RewriteRule ^go/shandianshu/?$ https://qwerty.shandianshuaff.com/#/?code=rUE75iYh [R=302,L]
+  RewriteRule ^go/yunjiexian/?$ https://qwerty.yunjiexianaff.com/?code=HBaZ91c6 [R=302,L]
+  RewriteRule ^go/liulianyun/?$ https://qwerty.liulianyunaff.com#/?code=hS5pvbfE [R=302,L]
+  RewriteRule ^go/shenxing/?$ https://qwerty.shenxingaff.com/#/?code=gawDQqVE [R=302,L]
+  RewriteRule ^go/huanqiuti/?$ https://qwerty.huanqiutiaff.com/?code=9I4KRNPH [R=302,L]
+  RewriteRule ^go/yinxingren/?$ https://yinxingren1.invisibleaff.com/#/?code=kcyEeoJT [R=302,L]
+  RewriteRule ^go/tiziyun/?$ https://tiziyun3.ladderaff.com/#/?code=7EmnpHs0 [R=302,L]
+  RewriteRule ^go/cyberguard/?$ https://cyberguard.best/#/register?code=AxXNNYng [R=302,L]
+  RewriteRule ^go/longmaoyun/?$ https://guangs.totoroaff.com/#/?code=totoro [R=302,L]
+  RewriteRule ^go/fatcat/?$ https://guangs.fatcataff.com/#/?code=fatcat [R=302,L]
+  RewriteRule ^go/tntcloud/?$ https://guangs.tntaff.com/#/?code=tntcloud [R=302,L]
+  RewriteRule ^go/qingyunti/?$ https://guangs.qingyunaff.com/#/?code=qingyunti [R=302,L]
+  RewriteRule ^go/shanshuiyun/?$ https://sldm1.ssyylf.com/#/register?code=YD5iQ888 [R=302,L]
+  RewriteRule ^go/lingdongyun/?$ https://varnexa.lingdongaff.com/#/?code=wZvEhEoI [R=302,L]
+  RewriteRule ^go/langwang/?$ https://varnexa.wavenetaff.com/#/?code=xwAM4tTd [R=302,L]
+  RewriteRule ^go/edgenova/?$ https://work.edgenovaaff.cc/#/register?code=cl3iB5YG [R=302,L]
+  RewriteRule ^go/yinghuochong/?$ https://vip02.fireflyaff.com/#/?code=jTp9wSgZ [R=302,L]
+  RewriteRule ^go/sslar/?$ https://guangs.sslaraff.com/#/?code=sslar [R=302,L]
+  RewriteRule ^go/wgetcloud/?$ https://guangs.wgetaff.com/#/?code=wgetcloud [R=302,L]
+  RewriteRule ^go/nexitally/?$ https://guangs.nexitallyaff.com/#/?code=nexitally [R=302,L]
+
+  # 4. VitePress cleanUrls 友好重写 (支持直接访问无 .html 路径)
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteRule ^(.*)$ $1.html [L]
+
+  # 5. 目录默认索引降级
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteCond %{REQUEST_FILENAME}/index.html -f
+  RewriteRule ^(.*)$ $1/index.html [L]
+</IfModule>
+
+# 6. 严禁 Soft 404，真实返回 404 状态码
+ErrorDocument 404 /404.html
+
+# 7. Gzip / Brotli 静态压缩加速 (提升 TTFB 与爬虫抓取效率)
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/json image/svg+xml
+</IfModule>
+
+# 8. 静态资源长期缓存与安全加固头部
+<IfModule mod_headers.c>
+  <FilesMatch "\.(jpg|jpeg|png|gif|svg|webp|ico|woff2|woff|ttf)$">
+    Header set Cache-Control "max-age=31536000, public, immutable"
+  </FilesMatch>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  # 确保爬虫能够识别权威索引
+  Header always set X-Robots-Tag "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+</IfModule>

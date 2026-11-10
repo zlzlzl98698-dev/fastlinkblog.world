@@ -1,0 +1,48 @@
+[
+  {
+    "category": "Windows 电脑客户端",
+    "clients": [
+      { "name": "Clash Verge Rev", "features": "Mihomo 内核、订阅管理、规则分流、TUN 模式，新手及进阶用户推荐首选", "platform": "Windows 10/11", "github": "https://github.com/clash-verge-rev/clash-verge-rev" },
+      { "name": "v2rayN", "features": "Xray、sing-box 等核心，适合多协议与节点深度调试管理", "platform": "Windows 10/11", "github": "https://github.com/2dust/v2rayN" },
+      { "name": "FlClash", "features": "基于 Mihomo 内核，界面现代简洁，内存占用极低", "platform": "Windows", "github": "https://github.com/chen08209/FlClash" },
+      { "name": "Hiddify", "features": "多协议集成、全自动优选节点、极简一键连接体验", "platform": "Windows", "github": "https://github.com/hiddify/hiddify-next" },
+      { "name": "Karing", "features": "sing-box 系客户端、界面直观，适合新手的极简配置方式", "platform": "Windows", "github": "https://github.com/KaringX/karing" }
+    ]
+  },
+  {
+    "category": "macOS 苹果电脑客户端",
+    "clients": [
+      { "name": "Clash Verge Rev (Mac)", "features": "完美支持 Apple Silicon M系列与 Intel 双架构，原生 TUN 虚拟网卡", "platform": "macOS 12+", "github": "https://github.com/clash-verge-rev/clash-verge-rev" },
+      { "name": "Surge Mac", "features": "Mac 上性能最强大的高级网络代理、规则分流与流量抓包调试神器", "platform": "macOS", "github": "https://nssurge.com" },
+      { "name": "sing-box for macOS", "features": "官方原生 sing-box 客户端，轻量省电、低系统开销", "platform": "macOS", "github": "https://sing-box.sagernet.org" },
+      { "name": "FlClash (Mac)", "features": "多平台一致的优雅 Flutter 界面，支持通用 Clash 订阅", "platform": "macOS", "github": "https://github.com/chen08209/FlClash" }
+    ]
+  },
+  {
+    "category": "iOS / iPadOS 客户端",
+    "clients": [
+      { "name": "Shadowrocket (小火箭)", "features": "iOS 最普及的规则分流代理工具，支持扫码导入订阅与节点节点测速", "platform": "iOS 14+", "github": "App Store (非国区)" },
+      { "name": "Stash", "features": "iOS 平台成熟的 Clash 风格规则代理工具，支持策略组与配置覆写", "platform": "iOS", "github": "App Store (非国区)" },
+      { "name": "Quantumult X (圈X)", "features": "强大的规则分流、MitM 脚本重写与个性化配置体验", "platform": "iOS", "github": "App Store (非国区)" },
+      { "name": "Surge 5 iOS", "features": "iOS 顶级网络调试与策略代理工具，专为极客与专业用户打造", "platform": "iOS", "github": "App Store (非国区)" },
+      { "name": "Karing (iOS)", "features": "App Store 支持，免费且兼容多种主流订阅格式", "platform": "iOS", "github": "App Store" }
+    ]
+  },
+  {
+    "category": "Android 安卓客户端",
+    "clients": [
+      { "name": "v2rayNG", "features": "经典 Xray 系协议客户端，稳定小巧，支持批量测速与分应用代理", "platform": "Android 8+", "github": "https://github.com/2dust/v2rayNG" },
+      { "name": "FlClash (Android)", "features": "现代质感设计，Mihomo 内核，规则分流顺畅", "platform": "Android", "github": "https://github.com/chen08209/FlClash" },
+      { "name": "Clash Meta for Android", "features": "CMFA 经典分支，支持 Clash 订阅与丰富策略组", "platform": "Android", "github": "https://github.com/MetaCubeX/ClashMetaForAndroid" },
+      { "name": "Hiddify (Android)", "features": "多协议自动化选择，对新手极其友好的 Material 3 界面", "platform": "Android", "github": "https://github.com/hiddify/hiddify-next" }
+    ]
+  },
+  {
+    "category": "OpenWrt / 软路由客户端",
+    "clients": [
+      { "name": "OpenClash", "features": "路由器全局透明代理，支持 Mihomo 内核，家庭全设备无感知科学上网", "platform": "OpenWrt", "github": "https://github.com/vernesong/OpenClash" },
+      { "name": "PassWall2", "features": "多核心支持，智能分流与故障自动切换", "platform": "OpenWrt", "github": "https://github.com/xiaorouji/openwrt-passwall" },
+      { "name": "Nikki", "features": "轻量级 Mihomo 透明代理，要求 OpenWrt 24.10 及以上系统", "platform": "OpenWrt 24.10+", "github": "https://github.com/nikkinikkinikki/nikki" }
+    ]
+  }
+]
